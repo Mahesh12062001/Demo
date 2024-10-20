@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.allcontainer{
+    padding: 10px;
+}
 
 
 .pos{
@@ -24,12 +27,15 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(9, 216, 231);
-    height: 60px;
+    height: 8vh;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
-    width: 100%;
     position: sticky;
     top: 0px;
+}
+.heading{
+    width: 50%;
+    display: flex;
 }
 
 .menus {
@@ -63,22 +69,22 @@
 }
 .nav1{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+
 }
 
 
 .container2{
     display: flex;
-    padding: 15px;
     justify-content: space-between;
     align-items: center;
     color: sienna;
 }
 .nav1{
     width:50%;
-}
+} 
 .c2_img{
-    width:45%;
+    /* width:45%; */
     background-color: rgb(243, 235, 235);
 }
 .nav1 button{
@@ -110,7 +116,7 @@
     
 }
 .container3 .c3_img{
-        width:50%;
+        /* width:50%; */
         background-color: rgb(250, 246, 246);
 }
 .container3 .nav1{
@@ -119,11 +125,11 @@
 
 .title{
     width: 200px;
-    height: 250px;
+    height: 180px;
     text-align: center;
     padding: 10px;
     border: 2px blue;
-    background-color: lightgreen;
+    background-color: rgb(245, 11, 245);
     border-radius: 10px;
     transition: 700ms;
 }
@@ -137,6 +143,14 @@
 }
 
 .container4{
+    margin: 25px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    
+}
+.container5{
     margin: 25px;
     padding: 30px;
     display: flex;
@@ -187,7 +201,7 @@
     background-color: black;
     box-shadow: 2px 2px 8px 4px;
 }
-.container-5{
+.container-6{
     display: flex;
     justify-content: space-between;
     padding: 50px;
@@ -234,8 +248,8 @@
     padding: 10px;
 }
 .menubtn{
-    width: 65px;
-    height: 50px;
+    
+   
     padding: 10px;
    background-color:white;
    border-radius: 10px;
@@ -249,10 +263,11 @@
 
 @media only screen and (min-width:300px) and (max-width:780px){
     .container2{ 
-        flex-direction: column;
-        justify-contnt: center;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        font-size: 10px;
     }
-    .menus{
+    /* .menus{
         width: fit-content;
         position: absolute;
         right: 0px;
@@ -262,11 +277,93 @@
         background-color:lightcyan;
         padding: 20px;
         display: none;
-    }
+    } */
+     .container3{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        font-size: 10px;
+     }
     .menubtn{
         display: flex;
     }
-    .menus a{
+    .heading h1{
+        display: flex;
+        font-size: 16px;
+        text-indent: 10px;
+        align-items: center;
+    }
+    .heading{
+        display:flex ;
+        width: 80%;
+    }
+    .menus{
+        display: none;
+    }
+    .nav1{
+        width: 100%;
+    }
+    .nav1 button{
+        width: 120px;
+        height: 35px;
+    }
+    .c2_img img{
+        margin-top: 10px;
+        height: 170px;
+        width: 300px;
+
+    }
+    .c3_img img{
+        height: 170px;
+        width: 300px;
+    }
+    .container3 .nav1{
+        width: 100%;
+    }
+    .midder{
+        text-align: center;
+        margin: 10px;
+        color: rgb(17, 15, 13);
+        font-size: larger;
+        background-color: rgb(21, 255, 0);
+    
+    }
+    .container3{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .container4{
+        margin: 15px;
+        padding: 30px;
+        margin: 10px;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .title{
+        margin: 10px;
+    }
+    .box-l{
+        margin-top: 30px;
+        margin: 40px;
+        padding: 20px;
+        display: flex;
+        width: 300px;
+        background-color: #8d0707;
+        color: antiquewhite;
+        border-radius: 10px;
+        transition: 750ms;
+       
+    }
+    .container5{
+        margin: 25px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px;
+        
+    }
+
+   /* .menus a{
         color:#8d0707;
         margin: 20px;
         font-size: x-large;
@@ -274,14 +371,14 @@
     .container2 img{
         display: none;
     }
-   
-    .container{
+    
+     .container{
         width:fit-content;
         height:min-content;
         position: relative;
         justify-content: space-between;
     }
-    .nav{
+     .nav{
         position: relative;
         justify-content: space-between;
         font-size: x-large;
@@ -291,24 +388,19 @@
        
     }
     .nav h1{
-        padding-top: 8px;
-    }
+        padding-top: 8px; 
+     }
     .nav li{
        margin-bottom: 20px;
     }
-    .nav1 p{
-        font-size: xx-large;
-    }
+     .nav1 p{
+        font-size: xx-large; 
+     }
     .midder{
         color: black;
         font-size: xx-large;
-    }
-    .container3{
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .title{
+    } */
+    /* .title{
         width:100%;
         font-size: xx-large;
         overflow: hidden;
@@ -316,28 +408,27 @@
     .container4{
         font-size: larger;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
 
-    }
+     } 
     
     .midder2{
         font-size:xx-large;
         color: aquamarine;
     }
     .container-5{
-        /* flex-direction: column; */
-        align-items: center;
+         flex-direction: column; 
+         align-items: center;
         font-size: xx-large;
         padding: 10px;
     }
     .container-5 h3{
         color: #8d0707;
         box-shadow: 2px 1px 2px 2px ;
-    }
+    } 
     
 }
 @media only screen and (min-width:780px) and (max-width:960px){
     .container{
         width: fit-content;
-    }
-}
+}*/}
